@@ -17,7 +17,7 @@
 	
 	
 
-	<lang:groovy id="helloGroovyController" script-source="classpath:groovy/HelloGroovyController.groovy"></lang:groovy>
+	<lang:groovy id="helloGroovyController" refresh-check-delay="1000" script-source="file:src/main/resources/groovy/HelloGroovyController.groovy"></lang:groovy>
 
 
 	<bean name="/helloGroovy.htm" id="controller" class="com.hopcroft.examples.controller.HelloController">

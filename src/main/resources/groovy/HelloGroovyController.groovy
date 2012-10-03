@@ -19,8 +19,9 @@ public class HelloGroovyController implements Controller {
             throws ServletException, IOException {
 
         logger.info("Returning index view");
+        System.out.println("Oahaaa");
 
-        return new ModelAndView("index.jsp");
+        return new ModelAndView("index.jsp", "message", "hello");
     }
 
 }
